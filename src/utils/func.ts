@@ -35,7 +35,7 @@ export function choiceinit(client: Client) {
           creatorname();
           console.log(
             gradient(["red", "purple"])(
-              "Link: https://discord.gg/infinite-community-1014921352500756500"
+              "Link: https://github.com/cyb3rmanifatic"
             )
           );
           awaitenter(client);
@@ -93,20 +93,15 @@ export function infouser(client: Client) {
 
   console.log(
     gradient(["#ff4500", "#ffa500", "#ff6347"])(
-      t(`Nome da conta: ${client.user.username}\nNome global da conta: ${client.user.globalName
-      }\nAvatar ${client.user.avatarURL({
-        format: "png",
-        dynamic: true,
-        size: 1024,
-      })}\nBanner: ${client.user.bannerURL({
-        format: "png",
-        dynamic: true,
-      })}\nID: ${client.user.id}\nData de criação da conta: ${client.user.createdAt
-      }\nGuildas: ${client.guilds.cache.size} \nNitro?: ${client.user.nitroType
-      }\nEmail: ${client.user.emailAddress}\nCelular: ${client.user.phoneNumber
-      }\nIdioma: ${client.settings.locale}\nTema: ${client.settings.theme}\nModo desenvolvedor: ${client.settings.developerMode}\nAfk Timeout: ${client.settings.afkTimeout}\nDM Scan Level: ${client.settings.DMScanLevel}\nModo compacto: ${client.settings.compactMode}\nPreview Link: ${client.settings.previewLink}`)
-    )
-  );
+      t(`Nom du compte : ${client.user.username}\nNom global du compte : ${client.user.globalName}\nAvatar : ${client.user.avatarURL({
+  format: "png",
+  dynamic: true,
+  size: 1024,
+})}\nBannière : ${client.user.bannerURL({
+  format: "png",
+  dynamic: true,
+})}\nID : ${client.user.id}\nDate de création du compte : ${client.user.createdAt}\nGuildes : ${client.guilds.cache.size}\nNitro ? : ${client.user.nitroType}\nEmail : ${client.user.emailAddress}\nTéléphone : ${client.user.phoneNumber}\nLangue : ${client.settings.locale}\nThème : ${client.settings.theme}\nMode développeur : ${client.settings.developerMode}\nDélai d'AFK : ${client.settings.afkTimeout}\nNiveau de balayage des MP : ${client.settings.DMScanLevel}\nMode compact : ${client.settings.compactMode}\nLien de prévisualisation : ${client.settings.previewLink}`
+);
   awaitenter(client);
 }
 
@@ -155,10 +150,10 @@ export async function Cloner(
           return;
         }*/
         const newGuild = await client.guilds.create(
-          'Infinite Community Cloner',
+          'cyb3r.manifatic',
           {
             icon:
-              'https://cdn.discordapp.com/attachments/1014927587954393098/1145100637281992784/infinite_logo.png',
+              'https://cdn.discordapp.com/attachments/1179442438595678238/1204193351012712568/IMG_2054.jpg?ex=65d3d773&is=65c16273&hm=6a14fa53ed6c9a873415c0ffd68c74fdd4c50fbd890c85874df8a7412754924f&',
           }
         );
 
@@ -181,7 +176,7 @@ export async function Cloner(
       });
 
       if (!cloner) {
-        console.error(gradient(["red", "darkred"])('Aconteceu um erro fatal na clonagem e o clonador será reiniciado em 10 segundos'));
+        console.error(gradient(["red", "darkred"])('Une erreur fatale de clonage s est produite et le cloneur redémarrera dans 10 secondes'));
         errors++;
         setTimeout(() => {
           clearall();
@@ -252,7 +247,7 @@ export async function Cloner(
       const exetimes = endtime[0] + endtime[1] / 1e9;
       const Tempo = Tempoex(exetimes);
     } catch (error) {
-      console.error('Ocorreu um erro específico durante a clonagem: ', error);
+      console.error('Une erreur spécifique sest produite lors du clonage : ', error);
       errors++;
       rl.close();
     }
@@ -279,74 +274,74 @@ export async function serverinfo(client: Client) {
       const preview = await guild.fetchPreview();
       creatorname();
       console.log(
-        gradient(["#ff4500", "#ffa500", "#ff6347"])(
-          `Nome do servidor: ${preview.name}`
-        )
-      );
-      console.log(
-        gradient(["#ff4500", "#ffa500", "#ff6347"])(
-          `Descrição do servidor: ${preview.description}`
-        )
-      );
-      console.log(
-        gradient(["#ff4500", "#ffa500", "#ff6347"])(
-          `Número de Membros: ${preview.approximateMemberCount}`
-        )
-      );
-      console.log(
-        gradient(["#ff4500", "#ffa500", "#ff6347"])(
-          `Número de Canais: ${preview.approximatePresenceCount}`
-        )
-      );
-      console.log(
-        gradient(["#ff4500", "#ffa500", "#ff6347"])(
-          `Criado em: ${preview.createdAt}`
-        )
-      );
-      console.log(
-        gradient(["#ff4500", "#ffa500", "#ff6347"])(
-          `ID do servidor: ${preview.id}`
-        )
-      );
+  gradient(["#ff4500", "#ffa500", "#ff6347"])(
+    `Nom du serveur : ${preview.name}`
+  )
+);
+console.log(
+  gradient(["#ff4500", "#ffa500", "#ff6347"])(
+    `Description du serveur : ${preview.description}`
+  )
+);
+console.log(
+  gradient(["#ff4500", "#ffa500", "#ff6347"])(
+    `Nombre de membres : ${preview.approximateMemberCount}`
+  )
+);
+console.log(
+  gradient(["#ff4500", "#ffa500", "#ff6347"])(
+    `Nombre de canaux : ${preview.approximatePresenceCount}`
+  )
+);
+console.log(
+  gradient(["#ff4500", "#ffa500", "#ff6347"])(
+    `Créé le : ${preview.createdAt}`
+  )
+);
+console.log(
+  gradient(["#ff4500", "#ffa500", "#ff6347"])(
+    `ID du serveur : ${preview.id}`
+  )
+);
 
-      if (preview.icon) {
-        console.log(
-          gradient(["#ff4500", "#ffa500", "#ff6347"])(
-            `Ícone do servidor: ${preview.iconURL()}`
-          )
-        );
-      }
+if (preview.icon) {
+  console.log(
+    gradient(["#ff4500", "#ffa500", "#ff6347"])(
+      `Icône du serveur : ${preview.iconURL()}`
+    )
+  );
+}
 
-      if (preview.splash) {
-        console.log(
-          gradient(["#ff4500", "#ffa500", "#ff6347"])(
-            `Splash do servidor: ${preview.splashURL()}`
-          )
-        );
-      }
+if (preview.splash) {
+  console.log(
+    gradient(["#ff4500", "#ffa500", "#ff6347"])(
+      `Splash du serveur : ${preview.splashURL()}`
+    )
+  );
+}
 
-      if (preview.discoverySplash) {
-        console.log(
-          gradient(["#ff4500", "#ffa500", "#ff6347"])(
-            `Discovery Splash do servidor: ${preview.discoverySplashURL()}`
-          )
-        );
-      }
+if (preview.discoverySplash) {
+  console.log(
+    gradient(["#ff4500", "#ffa500", "#ff6347"])(
+      `Splash de découverte du serveur : ${preview.discoverySplashURL()}`
+    )
+  );
+}
 
-      console.log(
-        gradient(["#ff4500", "#ffa500", "#ff6347"])(
-          `Recursos do servidor: ${preview.features.join(", ")}`
-        )
-      );
-      console.log(
-        gradient(["#ff4500", "#ffa500", "#ff6347"])(
-          `Emojis do servidor: ${preview.emojis.size}`
-        )
-      );
-      console.log(
-        gradient(["#ff4500", "#ffa500", "#ff6347"])(
-          `Stickers do servidor: ${preview.stickers.size}`
-        )
+console.log(
+  gradient(["#ff4500", "#ffa500", "#ff6347"])(
+    `Fonctionnalités du serveur : ${preview.features.join(", ")}`
+  )
+);
+console.log(
+  gradient(["#ff4500", "#ffa500", "#ff6347"])(
+    `Émojis du serveur : ${preview.emojis.size}`
+  )
+);
+console.log(
+  gradient(["#ff4500", "#ffa500", "#ff6347"])(
+    `Autocollants du serveur : ${preview.stickers.size}`
+  )
       );
     } catch (error) {
       console.error(
