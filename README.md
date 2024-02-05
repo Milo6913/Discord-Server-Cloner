@@ -9,16 +9,10 @@ Ce projet a été créé pour vous faciliter la vie. Au lieu de passer des heure
 
 ## Comment utiliser
 ```typescript
-pnpm i
- ou
 npm i
- ou
-yarn add
 ```
 **Exemples avec tsx**
 ```typescript
-pnpm i -g tsx
- ou
 npm i -g tsx
 ```
 
