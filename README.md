@@ -15,7 +15,10 @@ npm i
 ```typescript
 npm i -g tsx
 ```
-
+Ajoute un fichier .env comme ci dessous et met le token entre ""
+```typescript
+TOKEN=
+```
 ```typescript
 tsx .
 ```
